@@ -1,0 +1,116 @@
+.img-card-fit {
+    object-fit: cover;
+    width: 100%;
+    height: auto;
+}
+
+.img-cont {
+    height: 200px;
+    overflow: hidden;
+    background-color: beige;
+}
+
+.card-content{
+    height: 150px;
+    overflow: auto;
+}
+
+main {
+    min-height: calc(100vh - 100px);
+  }
+
+.checked{
+    color: orange;
+}
+
+.offcanvas-top{
+    height: fit-content;
+}
+
+.divPeli {
+    box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.2), 1px 1px 1px 1px rgba(0, 0, 0, 0.19);
+    margin-bottom: 1%;
+}
+.titlePeli {
+    color: aliceblue;
+    margin-left: 1%;
+}
+
+ul {
+    list-style: none;
+  }
+
+.tagPeli{
+    color: gray ;
+    margin-left: 1%;
+    font-style: italic;
+  }
+
+  #offcanvas {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 20px;
+    transition: transform 0.3s ease;
+    transform: translateY(-100%); /* Initially hide offcanvas */
+}
+#offcanvas.show {
+    display: block;
+    transform: translateY(0); /* Show the offcanvas */
+}
+
+.offcanvas-genres{
+    color: gray ;
+    margin-left: 1%;
+    font-style: italic;
+}
+
+.offcanvas-title{
+    font-size: 200%;
+}
+
+.dropdown{
+    margin-bottom: 1%;
+    margin-right: 2%;
+}
+.dropdown-item{
+    color: gray;
+}
+.divPeli:hover::after {
+    content: attr(data-tooltip);
+    position: absolute;
+    bottom: 100%; /* Position above the div */
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+    color: white; /* Text color */
+    padding: 5px 10px; /* Padding for the tooltip */
+    border-radius: 5px; /* Rounded corners */
+    white-space: nowrap; /* Prevent text wrapping */
+    z-index: 10; /* Ensure it appears above other elements */
+}
+
+.checked {
+    color: orange;
+  }
+
+#moreBtn{
+    text-align: right;
+}
+
+.divPeli {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Two equal columns */
+    width: 80%; /* Full width of parent */
+    margin-left: 10%;
+}
+
+
+.divStars {
+    text-align: right; /* Align text to the right */
+    margin-right: 1%;
+}
